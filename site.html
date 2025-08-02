@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Projetos</title>
+    <!-- Incluindo Tailwind CSS para um design moderno e responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Estilo da fonte Inter, que é limpa e moderna */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #38b2ac;
+            width: 24px;
+            height: 24px;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+        }
+        @-webkit-keyframes spin {
+            0% { -webkit-transform: rotate(0deg); }
+            100% { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Seção do Cabeçalho/Navegação -->
+    <header class="bg-gray-800 shadow-md">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-teal-400">
+                &lt;Jomaph /&gt;
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#about-me" class="text-gray-300 hover:text-teal-400 transition-colors duration-300">Sobre Mim</a></li>
+                <li><a href="#projects" class="text-gray-300 hover:text-teal-400 transition-colors duration-300">Projetos</a></li>
+                <li><a href="#gemini-feature" class="text-gray-300 hover:text-teal-400 transition-colors duration-300">Gerador de Ideias</a></li>
+                <li><a href="#contact" class="text-gray-300 hover:text-teal-400 transition-colors duration-300">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal com o Título e Subtítulo -->
+    <main class="container mx-auto p-6 mt-10">
+        <section class="text-center mb-12">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                Olá, sou <span class="text-teal-400">José Ferreira</span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                Bem-vindo ao meu espaço online. Aqui, partilho alguns dos meus projetos e paixões.
+            </p>
+        </section>
+
+        <!-- Seção Sobre Mim (NOVA) -->
+        <section id="about-me" class="mb-16 bg-gray-800 rounded-xl p-8">
+            <h2 class="text-4xl font-bold text-center mb-6 text-white">Sobre Mim</h2>
+            <p class="text-gray-400 mb-4">
+                Sou uma pessoa curiosa, disciplinada e determinada a crescer — como desenvolvedor e como ser humano. A programação é meu campo de batalha e meu playground. Gosto de mergulhar fundo em linguagens como Python, explorando desde automações em FinTech até a arquitetura de apps de pagamento. Não fico apenas no código cru: penso na clareza, na manutenção, nos comentários que transformam linhas de código em ideias bem estruturadas.
+            </p>
+            <p class="text-gray-400 mb-4">
+                Adoro estudar as novas tendências, como os recursos do Python 3.13, e experimentar frameworks como React e Express.js. Meu foco está em criar soluções elegantes, funcionais e escaláveis — e transformar insights técnicos em impacto real.
+            </p>
+            <p class="text-gray-400">
+                Mas minha jornada não é só técnica. Me interesso por estratégias mentais, como o mindfulness, e por filosofias que me ajudam a manter o foco e superar a mediocridade. Tenho uma veia criativa também: quero inspirar outros desenvolvedores com vídeos motivacionais, mostrando que persistência e propósito fazem a diferença. O que me move é a busca pela excelência, tanto no código quanto na vida.
+            </p>
+        </section>
+
+        <!-- Seção dos Projetos -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-4xl font-bold text-center mb-8">Meus Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Cartão de Projeto 3 (NOVO) -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Chatbot de IA para Derivativos</h3>
+                        <p class="text-gray-400 mb-4">
+                            Um chatbot inteligente focado em fornecer informações e insights sobre o mercado de derivativos.
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-auto">
+                        <a href="https://github.com/Jomaph/CHATBOT-DERIV" class="bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/Jomaph/CHATBOT-DERIV" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cartão de Projeto 4 (NOVO) -->
+                <div class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white mb-2">Repositório de Estudos em Python</h3>
+                        <p class="text-gray-400 mb-4">
+                            Uma coleção abrangente de projetos, scripts de automação, estudos em IA e análise de dados.
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 mt-auto">
+                        <a href="https://github.com/Jomaph/Reposit-rio-de-Estudos-e-Contribui-es-em-Python-Automa-o-IA-e-Dados" class="bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">
+                            Ver Projeto
+                        </a>
+                        <a href="https://github.com/Jomaph/Reposit-rio-de-Estudos-e-Contribui-es-em-Python-Automa-o-IA-e-Dados" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de Gerador de Ideias de Projetos (Gemini API) -->
+        <section id="gemini-feature" class="mb-16 bg-gray-800 rounded-xl p-8">
+            <h2 class="text-4xl font-bold text-center mb-6 text-white">
+                Gerador de Ideias de Projetos ✨
+            </h2>
+            <p class="text-gray-400 text-center max-w-xl mx-auto mb-6">
+                Precisa de inspiração? Descreva um tópico e o Gemini irá sugerir-lhe uma ideia de projeto Python!
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 mb-6">
+                <textarea id="project-input" class="flex-1 bg-gray-700 text-white rounded-lg p-4 focus:ring-2 focus:ring-teal-500 outline-none" rows="3" placeholder="Ex: 'Um web scraper para notícias de tecnologia'"></textarea>
+                <button id="generate-btn" class="bg-teal-500 text-white px-6 py-3 rounded-lg font-bold hover:bg-teal-600 transition-colors duration-300 flex-shrink-0">
+                    Gerar Ideia ✨
+                </button>
+            </div>
+            <div id="gemini-output" class="bg-gray-700 p-4 rounded-lg min-h-[100px] text-gray-300 whitespace-pre-wrap">
+                <!-- O resultado da API aparecerá aqui. -->
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contact" class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Entre em Contato</h2>
+            <p class="text-lg text-gray-400 mb-6">
+                Estou sempre à procura de novas oportunidades e colaborações.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:jomaaph@gmail.com" class="text-teal-400 hover:text-teal-500 transition-colors duration-300">
+                    <i class="fas fa-envelope text-4xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/jos%C3%A9-ferreira-a98362342" class="text-teal-400 hover:text-teal-500 transition-colors duration-300">
+                    <i class="fab fa-linkedin text-4xl"></i>
+                </a>
+                <a href="https://github.com/Jomaph" class="text-teal-400 hover:text-teal-400 transition-colors duration-300">
+                    <i class="fab fa-github text-4xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@jomaaph" class="text-teal-400 hover:text-teal-500 transition-colors duration-300">
+                    <i class="fab fa-youtube text-4xl"></i>
+                </a>
+                <a href="https://x.com/jomaaph" class="text-teal-400 hover:text-teal-500 transition-colors duration-300">
+                    <i class="fab fa-x-twitter text-4xl"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-center p-4 mt-12 text-gray-400">
+        <p>&copy; 2024 Jose Ferreira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateBtn = document.getElementById('generate-btn');
+            const projectInput = document.getElementById('project-input');
+            const geminiOutput = document.getElementById('gemini-output');
+
+            generateBtn.addEventListener('click', async () => {
+                const prompt = projectInput.value.trim();
+                if (prompt === '') {
+                    geminiOutput.textContent = 'Por favor, insira um tópico para gerar uma ideia.';
+                    return;
+                }
+
+                geminiOutput.innerHTML = '<div class="spinner mx-auto"></div>';
+                generateBtn.disabled = true;
+
+                const userPrompt = `Gera uma ideia de projeto de programação em Python com base no seguinte tópico: "${prompt}". A ideia deve ser detalhada, incluindo o propósito do projeto, as funcionalidades principais e as bibliotecas ou tecnologias Python relevantes a serem usadas. Responda em Português (Portugal).`;
+
+                let retries = 0;
+                const maxRetries = 3;
+                let delay = 1000; // 1 second
+
+                const callGeminiApi = async () => {
+                    const chatHistory = [{ role: "user", parts: [{ text: userPrompt }] }];
+                    const payload = { contents: chatHistory };
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            geminiOutput.textContent = text;
+                        } else {
+                            throw new Error('Resposta inesperada da API.');
+                        }
+                    } catch (error) {
+                        console.error('Erro ao chamar a API do Gemini:', error);
+                        if (retries < maxRetries) {
+                            retries++;
+                            delay *= 2; // Exponential backoff
+                            setTimeout(callGeminiApi, delay);
+                        } else {
+                            geminiOutput.textContent = 'Ocorreu um erro ao gerar a ideia. Por favor, tente novamente mais tarde.';
+                            generateBtn.disabled = false;
+                        }
+                    } finally {
+                        if (retries >= maxRetries || geminiOutput.textContent.length > 0) {
+                            generateBtn.disabled = false;
+                        }
+                    }
+                };
+                callGeminiApi();
+            });
+        });
+    </script>
+</body>
+</html>
